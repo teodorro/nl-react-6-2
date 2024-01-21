@@ -1,0 +1,118 @@
+
+.header__container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #888;
+}
+.header__title {
+  font-size: 24pt;
+  margin: 0.25em 0 0.25em 1em;
+}
+.header__button-update {
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 0.75em;
+  padding: 0;
+  margin: 0.25em;
+  font-size: 24pt;
+  background-color: transparent;
+}
+.header__button-update:focus {
+  outline: none;
+}
+
+
+.note {
+  height: 200px;
+  width: 200px;
+  margin: 1em;
+  border: 1px solid #a00;
+  box-shadow: 0em 0.2em 0.5em 0.2em dimgrey;
+  position: relative;
+}
+.note__text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #0a0;
+}
+.note__button-delete {
+  width: 2em;
+  height: 2em;
+  padding: 0;
+  border-radius: 1em;
+  font-size: 12px;
+  background: dimgray;
+  border: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: -0.2em -0.2em 0 0;
+}
+
+
+.notes {
+  height: 250px;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid #00a;
+}
+.notes__container {
+  overflow: auto;
+  display: flex;
+  align-items: start;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 1em;
+}
+
+
+.new-note {
+  height: 250px;
+  margin: 0 auto;
+  /* display: flex;
+  justify-content: center; */
+  display: flex;
+  justify-content: start;
+  border: 1px solid #00a;
+  align-items: end;
+}
+/* .new-note__container {
+  height: 250px;
+  width: 400px;
+  border: 1px solid #0a0;
+  position: relative;
+  display: flex;
+} */
+.new-note__text {
+  height: 80%;
+
+  width: 400px;
+  margin: 1em;
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  font-size: 14pt;
+  resize: none;
+}
+
+.new-note__button-submit {
+  /* max-width: 2em;
+  max-height: 2em; */
+  width: 2em;
+  height: 2em;
+  font-size: 24pt;
+  padding: 0;
+  margin: 0.5em 0;
+  border-radius: 1em
+  /* position: absolute;
+  top: 0;
+  right: 0; */
+}
+.new-note__button-submit:focus {
+  outline: none;
+}
+
+
+
