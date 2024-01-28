@@ -22,5 +22,15 @@ export default {
       return await response.status;
     }
     throw new Error("Ошибка HTTP: " + response.status);
-  }
+  },
+
+  async deleteNote(id){
+    const response = await fetch(`${address}/${id}`, {
+      method: 'DELETE',
+    });
+    if (response.ok) {
+      return true;
+    }
+    throw new Error("Ошибка HTTP: " + response.status);
+ }
 }

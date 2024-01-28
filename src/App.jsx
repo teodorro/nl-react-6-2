@@ -12,12 +12,10 @@ function App() {
 
   const update = async () => {
     const notesJson = await noteService.getNotes();
-    console.log(notesJson);
     setNotes(notesJson);
   }
 
   useEffect(() => {
-    console.log('asdf')
     if (!loaded) {
       update();
       setLoaded(true);
@@ -25,17 +23,17 @@ function App() {
   }, [notes, loaded])
 
   return (
-    <>
-      <div>
+    <div className='page'>
+      <div className='header'>
         <Header update={update}></Header>
       </div>
-      <div>
-        <Notes notes={notes}></Notes>
+      <div className='notes'>
+        <Notes notes={notes} update={update}></Notes>
       </div>
-      <div>
+      <div className='new-note'>
         <NewNote update={update}></NewNote>
       </div>
-    </>
+    </div>
   )
 }
 

@@ -1,7 +1,6 @@
 import React from 'react'
 import '../css/main.css';
-import noteService from '../service/note-service';
-import { useState} from 'react';
+import PropTypes from "prop-types";
 
 export default function Header({update}) {
   return (
@@ -12,3 +11,7 @@ export default function Header({update}) {
     </div>
   )
 }
+
+Header.propTypes = {
+  update: PropTypes.func,
+};

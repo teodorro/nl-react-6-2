@@ -5,9 +5,9 @@ import noteService from "../service/note-service";
 export default function NewNote({update}) {
   const [text, setText] = useState("");
   return (
-    <form className="new-note">
+    <form className="new-note__container">
       <textarea
-        rows="10"
+        rows="5"
         cols="40"
         type="text"
         className="new-note__text"
